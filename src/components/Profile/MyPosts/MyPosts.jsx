@@ -4,8 +4,8 @@ import Post from './Post/Post.jsx';
 
 const MyPosts = () => {
     return( <div>
-       <Post />
-       <Post />
+       <Post message='hi, how are you?'/> 
+       <Post message='its my first post'/>
        <Post />
        <Post />
        <Post />
