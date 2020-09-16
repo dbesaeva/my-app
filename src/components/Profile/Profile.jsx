@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts.jsx';
 
 const Profile = () => {
     return(
-        <div className={c.content}>
+        <div>
       
         <div>
         <img src='https://c4.wallpaperflare.com/wallpaper/504/736/858/desert-sand-rocks-landscape-wallpaper-preview.jpg'></img>
