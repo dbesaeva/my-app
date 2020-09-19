@@ -3,21 +3,27 @@ import c from './MyPosts.module.css'
 import Post from './Post/Post.jsx';
 
 const MyPosts = () => {
-    return( <div className={c.postblock}>
+
+    let postsData = [
+        { likesCount: 12, message: 'hi, how are you' },
+        { likesCount: 19, message: 'its my first post' },
+
+    ]
+    return (<div className={c.postblock}>
         <h3> My Posts</h3>
-        <div> 
+        <div>
             <div><textarea> </textarea></div>
 
             <div><button>add post</button></div>
         </div>
         <div className={c.posts}>
-       <Post message='hi, how are you?' likesCount='0'/> 
-       <Post message='its my first post' likesCount='19'/>
-       <Post />
-       <Post />
-       <Post />
-       </div>
+            <Post message={postsData[0].message} likesCount={postsData[0].likesCount} />
+            <Post message={postsData[1].message} likesCount={postsData[1].likesCount} />
+            <Post />
+            <Post />
+            <Post />
         </div>
+    </div>
     );
 }
 
