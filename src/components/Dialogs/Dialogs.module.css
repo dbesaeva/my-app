@@ -14,3 +14,8 @@
 .messages {
     padding: 10px;
 }
+
+.img img {
+    width: 20px;
+    padding: 20px;
+}
